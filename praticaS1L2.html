@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+            color: whitesmoke;
+            padding: 2em;
+            margin: 20px;
+            justify-content: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: rgb(230, 209, 23);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: start;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to right, rgba(6, 6, 102, 0.342), rgb(175, 1, 129));
+        }
+
+        .caption {
+            background-color: rgb(175, 1, 129);
+        }
+
+        thead {
+            background-color: rgba(6, 6, 102, 0.342);
+            color: rgb(175, 1, 129);
+        }
+
+        tbody {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a
+                href="https://epicode.com/it/?utm_source=adwords&utm_campaign=Brand&utm_adgroup=brandexact&utm_term=epicode&utm_medium=ppc&hsa_acc=1246633295&hsa_cam=11897141170&hsa_grp=115607542236&hsa_ad=639941169967&hsa_src=g&hsa_tgt=kwd-1083842420863&hsa_kw=epicode&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rPghevRWKGuuFYrLSSoNWbQpn1rFp0Fq8H87W8BOvz2eDh73GtNWdBoClYoQAvD_BwE">
+                <img src="/u1d2/assets/header-logo.png" alt="epicode-logo" width="200px" />
+            </a>
+            <h1>Epicode - il blog dei developers</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Articoli</a>
+                <a href="#">Lavora con noi</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3 class="titolo1">Come creare un template per un post
+            <br>di Mario Rossi - pubblicato il 25/10/2020</h3>
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identidicando le parti comuni da
+                applicare a tutte le pagine</p>
+
+            <p>Le varie aree saranno quindi suddivise in :</p>
+            <ul>
+                <li>Contenuti di instestazione del tag &lt;header&gt;</li>
+                <li>Contenuti centrali variabili del tag &lt;main&gt;(corpo principale) </li>
+                <li>Contenuti di fine pagine comuni, da inserire del tag</li>
+            </ul>
+            <p>Formattazione del codice</p>
+            <ol>
+                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+            <table class="table">
+                <caption class="caption">Diffusione dei CSS</caption>
+                <thead>
+                    <th>Anno</th>
+                    <th>% di utilizzo</th>
+                    <th>Supporto browsers</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td>20%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>35%</td>
+                        <td>22%</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>45%</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>80%</td>
+                        <td>51%</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>80%</td>
+                        <td>76%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Un test di validazione potrà essere fatto tramite il tool online
+                <a href="#">LINK</a>
+                dedicato allo scopo. Una volta ottimizzato il tutto,
+                avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+            </p>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/FC4Kun_BimM"
+                title="The Cutest Baby Bunny Rabbit Compilation EVER" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <p>Vuoi rimanere aggiornato su altre novità del blog?</p>
+            <p>Iscriviti alla nostra newsletter:</p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" required />
+                <button type="submit">ISCRIVITI </button>
+            </form>
+            <hr>
+        </section>
+        <section>
+            <article>
+                <p>Articoli correlati
+                <br>Validare il codice HTML
+                <br>Categoria: develop
+                <br>Data: 18-9-2020</p>
+            </article>
+            <article>
+                <p>Correggere la sintass
+                <br>Categoria: develop
+                <br>Data: 16-9-2020</p>
+            </article>
+            <article>
+                <p>Meno Kb nella pagina
+                <br>Categoria: ottimizzazione
+                <br>Data: 30-9-2020</p>
+            </article>
+        </section>
+    </main>
+    <hr/>
+    <footer>
+        <p>Blog Epic &copy; 2023</p>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
+        <p><a href="#">info@epicode.school</a></p>
+    </footer>
+</body>
+
+</html>
